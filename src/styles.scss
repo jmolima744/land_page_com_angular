@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+
+// @import "color-variables.scss";
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.pad-70{
+padding: 0 70px;
+}
