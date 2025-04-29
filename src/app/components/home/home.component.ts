@@ -1,11 +1,13 @@
 import { Component } from '@angular/core';
 import { HeaderComponent } from '../header/header.component';
 import { NgOptimizedImage } from '@angular/common';
+import { BtnPrimaryComponent } from '../btn-primary/btn-primary.component';
+import { NewsletterFormComponent } from '../newsletter-form/newsletter-form.component';
 
 @Component({
   selector: 'app-home',
   // referencia do componente em outro componente
-  imports: [HeaderComponent,NgOptimizedImage],
+  imports: [HeaderComponent,NgOptimizedImage,BtnPrimaryComponent,NewsletterFormComponent],
   // coisas que vão ser necessarias para o uso 
   templateUrl: './home.component.html',
   // arquivo html que vai ser renderizado 

@@ -60,6 +60,12 @@ p{
         font-style: normal;
     }
 }
+
+.cta-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 @media(min-widhtth: 1068px){
     .main-section{
         flex-direction: row;
