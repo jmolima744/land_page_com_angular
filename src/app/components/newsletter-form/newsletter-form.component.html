@@ -8,12 +8,19 @@
     </div>
 
     <form [formGroup]="newsletterForm">
-        <label for="email">Name</label>
+        <label for="name">Name</label>
         <input id="name" formControlName="name"/>
 
         <label for="email">Email</label>
         <input id="email" formControlName="email"/>
-        <btn-primary btn-text="se inscreva" variant="secondary"></btn-primary>
+        <btn-primary btn-text="se inscreva" variant="secondary"
+        (submit)="onSubmit()"
+        [disabled]="!newsletterForm.valid"
+        [loading]="loading">   
+        <!-- possibilidade de inclusão para o codigo de validação, pois 
+        o que vai ocorrer e que parecido com a logica do projeto anterior
+        o botão vai estar desabilitado, e quando o usuario clicar -->
+        </btn-primary>
     </form>
 
 
